@@ -1,5 +1,5 @@
 # MrKraken's String Replacements
-### (English) Community Translated .ini for **Star Citizen [Build: sc-alpha-4.8.0_ptu_11768487]**
+### (English) Community Translated .ini for **Star Citizen [Build: sc-alpha-4.8.0_ptu_11777743]**
 
 # Includes
 - Contracts that award blueprints have the potential pool added to the end of the description
