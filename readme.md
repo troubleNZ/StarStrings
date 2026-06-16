@@ -1,5 +1,5 @@
 # MrKraken's String Replacements
-### (English) Community Translated .ini for **Star Citizen [Build: sc-alpha-4.8.0-hotfix_live_11875683]**
+### (English) Community Translated .ini for **Star Citizen [Build: sc-alpha-4.8.0-hotfix_live_11952564]**
 > [!WARNING]
 > You **will need to check for an update to this file every patch** - I don't recommend using custom strings on PTU as each new build will likely add new strings. I have an automation setup to push new versions live but please keep in mind that I am UK based and PTU builds normally go up very late UK time, so there may be a few hours delay
 # Changes Included
@@ -13,7 +13,12 @@
     - I've attempted to display these as cleanly as possible, but with it being an automated process there's only so much I can do.
     - Certain contracts (Like Tactical Strike Groups) have 2 pools that award on completion
   - Contracts with component blueprints in their pool show Name (Type) eg. `SnowBlind (Cooler)`
-- Hauling contract titles cleaned up and Direct underlined
+  - Pools that only award at certain rep ranks should now *mostly* display what level they award at (it's complicated)
+    - Eg. Covalex - only awards at Master rank, but all the ranks re-use the same string keys with formatting: `Covalex_HaulCargo_AToB_title=~mission(ReputationRank) Rank - Direct ~mission(CargoGradeToken) Cargo Haul`
+- Hauling contract title overhaul
+  - Direct now underlined
+  - Extra 'wordyness' removed
+  - To → From locations added (with thanks to WayfinderDrax for the idea)
 - Contracts that award scenario progress (Eg. Return of Xenothreat) show how many points & if they are split
 - Added reputation award amount to all contracts (title & description)
 ### Mining
@@ -23,11 +28,11 @@
 ### Items
 - Warning prefixes `[!]` for illegal substances
 - Componenet Type/Size/Grade prefixed to the name
-  - eg. `Tundra` -> `Mil/1/D Tundra`
+  - Eg. `Tundra` → `Mil/1/D Tundra`
 - Type notation prefix for missiles (Thanks to WhisperDark in Discord for suggestion)
-  - Eg. `Dominator II Missile` -> `[EM] Dominator II Missile`
+  - Eg. `Dominator II Missile` → `[EM] Dominator II Missile`
 - Reduced verbosity of Pyro MultiTool attachment names (so they don't scroll when using customise)
- - Eg. `TruHold Tractor Beam Attachment` -> `Tractorbeam`
+  - Eg. `TruHold Tractor Beam Attachment` → `Tractorbeam`
 ### Journal
 - Reformatted the Mining guide journal entry to group ores by rarity
   - nb. I do not verify that the source journal entry is in any way accurate.
